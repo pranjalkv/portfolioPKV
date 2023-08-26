@@ -1,0 +1,160 @@
+#about-sec
+{
+    width: 100%;
+    min-height: 100vh;
+    background-color:var(--darkestblue);
+color: var(--whit);
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+font-size: 100%;
+}
+#about-sec>h1
+{
+    text-align: center;
+    font-weight: 600;
+    color: var(--blue);
+    padding: 100px 0 1% 0;
+}
+.intro-part
+{
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    max-width: 1075px;
+}
+.skill-info
+{
+    margin: 0 6px;
+    flex-wrap: wrap;
+}
+.skill-info p
+{
+    color: var(--whit);
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+}
+.all-img
+{
+    
+    /* display: grid;
+    grid-template-columns: repeat(5,50px); */
+    margin: 0 auto;
+    justify-content: center;
+    padding-bottom: 50px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+.line
+{
+    margin: 0 auto;
+    width: 70%;
+}
+.img-div
+{
+    border-radius: 10px;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    transition: transform 0.7s ease-in-out;
+}
+
+.img-div:hover
+{
+    transform: scale(1.09);
+    
+}
+
+.your-img
+{
+    width: 280px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.logo-img
+{
+     width: 30px;
+    height: 30px;
+    border-radius: 10px;
+    object-fit: contain;
+}
+.edu-skill
+{
+    position: absolute;
+    top: -30px;
+    background-color: var(--darkestblue);
+    padding:0 2%;
+    color: var(--blue);
+}
+.photo-msg
+{
+    font-weight: 600;
+    color: var(--blue);
+}
+.your-intro
+{
+    width: calc(100% - 400px);
+     max-width: 870px;
+}
+.your-intro>h1
+{
+    font-weight: 600;
+    color: var(--blue);
+}
+.your-intro p
+{
+   font-size: 1.1em;
+   color: var(--whit);
+}
+@media (max-width:1068px)
+{
+    #about-sec
+    {
+        font-size: 80%;
+    }
+    .intro-part
+{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+.your-intro
+{
+    width: 90%;
+    text-align: center;
+}
+
+}
+@media (max-width:1368px) and (min-width:768px)
+{
+.your-img
+{
+    width: 18vw;
+    height: 25vw;
+    margin-bottom: 3%;
+    object-fit: unset;
+}
+}
+@media (max-width:768px)
+{
+.your-img
+{
+    width: 30vw;
+    height: 41vw;
+    margin-bottom: 3%;
+    object-fit: unset;
+}
+}

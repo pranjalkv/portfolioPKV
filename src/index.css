@@ -1,0 +1,20 @@
+:root
+{
+--darkestblue:#222629;
+--darkblue:#31363c;
+--blue:#86c232;
+--whit:#ffffff;  
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+  
+}
+body
+{
+  font-family: 'REM', sans-serif;
+  background-color: #222629;
+}

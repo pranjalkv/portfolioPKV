@@ -1,0 +1,137 @@
+#footer
+{
+    background-color: var(--darkestblue);
+    font-size: 100%;
+        padding: 2% 1% 0 1%;
+        width: 100%;
+}
+.footers-div
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 100%;
+}
+.foot-logo h1
+{
+    font-family: 'REM', sans-serif;
+    font-size: 2.4em;
+    font-weight: bolder;
+    color: var(--whit);
+}
+.cert-foot
+{
+   font-size: 1.8em;
+    font-weight: bolder;
+    color: var(--whit); 
+    cursor: pointer;
+}
+.cert-foot:hover ,.foot-logo h1:hover
+{
+color: var(--blue);
+}
+.foot-logo a
+{
+    text-decoration: none;
+}
+.twi-link
+{
+    width: 30px;
+}
+.f-links
+{
+    font-size: 1.6em;
+}
+.foot-copy 
+{
+    font-size: 1.1em;
+    color: var(--whit);
+    right: 2px;
+}
+.sec-footer-links
+{
+list-style-type: none;
+padding: 0;
+display: flex;
+justify-content: center;
+
+}
+.foot-li
+{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    border: 2px solid var(--blue);
+    margin:0 10px;
+    transform: scale(1);
+    transition: transform 0.4s ease-in-out;
+}
+.foot-li:hover
+{
+    transform: scale(1.2);
+}
+.foot-li a
+{
+    text-decoration: none;
+    color: var(--blue);
+    font-size: 20px;
+}
+@media (max-width:1368px) and (min-width:768px)
+{
+    #footer
+    {
+        font-size: 85%;
+    }
+        .twi-link
+{
+    width: 27px;
+}
+.foot-li
+{
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    .foot-li a
+    {
+        font-size: 17px;
+    }
+}
+@media (max-width:768px)
+{
+    #footer
+    {
+        font-size: 75%;
+    }
+    .footers-div
+    {
+        flex-direction: column;
+    }
+    .sec-footer-links
+    {
+        width: 100%;
+        margin-bottom: 0.5em;
+    }
+    .twi-link
+{
+    width: 24px;
+}
+.foot-li
+{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    .foot-li a
+    {
+        font-size: 14px;
+    }
+}

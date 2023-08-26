@@ -1,0 +1,210 @@
+.port-navbar a
+{
+    text-decoration: none;
+    color: var(--whit);
+}
+.port-navbar
+{
+    color: var(--blue);
+    font-size: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 4;
+    top: 0;
+    left: 0;
+}
+.move-port
+{
+    position: fixed;
+    top: 2px;
+    width: 100%;
+}
+.port-nav-links
+{
+    font-size: 1.3em;
+    color: var(--whit);
+    list-style: none;
+    margin: 0 auto;
+    letter-spacing: 1px;
+    width: 550px;
+    height: 80px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.blur-class
+{
+     -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px); 
+}
+.port-nav-links li
+{
+    padding:2%;
+    font-weight: 700;
+    border-bottom: 5px solid transparent;
+    cursor: pointer;
+}
+.port-nav-links a:hover
+{
+   color: var(--blue);
+}
+.port-nav-links .activeN
+{
+    border-bottom: 5px solid var(--blue);
+}
+.port-nav-links .activeN a
+{
+    color: var(--blue);
+}
+.logo
+{
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.8em;
+    padding:1% 3%;
+}
+.out-login
+{
+    background-color: transparent;
+    border: 2px solid var(--blue);
+    
+    color: var(--orange);
+}
+.orange-sign
+{
+    background-color: var(--orange);
+    color:var(--blue);
+}
+.orange-sign,.out-login 
+{
+  font-size:15px;
+  font-family:Arial;
+  padding: 0.6em 1.1em;
+  border-width:1px;
+  font-weight:bold;
+  border-radius: 6px;
+}
+.mobile-menu
+{
+    display: none;
+}
+.mobileUl
+{
+    display: none;
+}
+@media (min-width:3000px)
+{
+     .port-navbar
+    {
+        font-size: 120%;
+    }
+    .port-nav-links
+    {
+        width: 850px;
+        height: 140px;
+    }
+}
+@media (max-width:1368px) and (min-width:768px)
+{
+    .port-navbar
+    {
+        font-size: 80%;
+    }
+    .logo
+    {
+        padding:5% 2%;
+    }
+}
+@media (max-width:768px) 
+{
+    .port-navbar
+    {
+        font-size: 88%;
+    }
+    .mobile-menu
+    {
+        display: block;
+    }
+    .mobile-menu>p
+    {
+        font-size: 1.3em;
+    }
+    .move-port
+    {
+        display: none;
+    }
+    .orange-sign,.out-login
+    {
+        font-size: 10px;
+        padding: 0.2em 1.1em;
+    }
+    .mobileUl
+    {
+        position:fixed;
+        top: 0;
+        left: 0;
+        text-align: start;
+        list-style: none;
+        width: 100%;
+        height: 100vh;
+        background-color: var(--darkblue);
+        border-top:6px solid var(--blue);
+        font-size: 2em;
+        padding:10% 0 10% 20px;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+          -webkit-animation: menuBody 0.5s ease-in-out;
+            -moz-animation: menuBody 0.5s ease-in-out;
+            -o-animation: menuBody 0.5s ease-in-out;
+            animation: menuBody 0.5s ease-in-out;
+        z-index:9;
+    }
+    .mobileUl li
+{
+    padding:2%;
+    width: 90%;
+    font-weight: 700;
+    border-bottom: 5px solid transparent;
+}
+.mobileUl a:hover
+{
+   color: var(--blue);
+}
+.mobileUl a.active
+{
+    color: var(--blue);
+}
+.mobileUl .activeN
+{
+    border-bottom: 5px solid var(--blue);
+}
+.mobileUl .activeN a
+{
+    color: var(--blue);
+}
+    .cross
+    {
+        position: absolute;
+        right: 10px;
+        top:10px;
+        font-size: 1.4em;
+    }
+}
+
+   @-webkit-keyframes menuBody {
+        0%   { opacity: 0; }
+        100% { opacity: 1; }
+    }
+    @-moz-keyframes menuBody {
+        0%   { opacity: 0; }
+        100% { opacity: 1; }
+    }
+    @-o-keyframes menuBody {
+        0%   { opacity: 0; }
+        100% { opacity: 1; }
+    }
+    @keyframes menuBody {
+        0%   { opacity: 0; }
+        100% { opacity: 1; }
+    }
