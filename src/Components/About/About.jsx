@@ -45,8 +45,8 @@ const logos=[
     },
        {
         id:9,
-        imagesrc:"/images/sym9.png",
-        logo:"Node.js"
+        imagesrc:"/images/sym9.jpg",
+        logo:"Tailwind"
     },
        {
         id:10,
@@ -77,10 +77,12 @@ function About()
                     <p>Currently I am looking for a opportunity to learn more and develop amazing apps with my skills.</p>
                     <p  className="mb-5"><span style={{fontWeight:700}}>EDUCATION: </span>Bachelor of Technology in Electronics and 
                     Communication Engineering (2022) University of Lucknow, Lucknow, India</p>
-                    <hr />
-                      <div className="all-img">
+                </div>
+            </div>
+                <div className="all-img">
+                    <hr className="line"/>
                         <h4 className="edu-skill">Skills</h4>
-                    {logos.map((ele,i)=><div key={i}>
+                    {logos.map((ele,i)=><div key={i} className="mt-3">
                     <div className="skill-info d-flex justify-content-center align-items-center">
                     <div className="img-div">
                         <img className="logo-img mx-1" src={ele.imagesrc} alt="" />
@@ -90,8 +92,6 @@ function About()
                     </div>
                     </div>)}
                     </div>
-                </div>
-            </div>
         </section>
         </>
     )

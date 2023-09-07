@@ -1,6 +1,8 @@
 import { useEffect, useState ,useRef} from "react";
 import "./Project.css"
-import { FaCode ,FaExternalLinkAlt ,FaTimes} from "react-icons/fa";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCode , faArrowUpRightFromSquare ,faPlay, faXmark} from '@fortawesome/free-solid-svg-icons'
+
 import ReactPlayer from 'react-player'
 import topProj from "../../Projdata";
 
@@ -38,6 +40,10 @@ function Project()
     let s= str.slice(0,100)+"..."
     return s;
   }
+  function ytOpen(e)
+  {
+    setVidopen(e.target.id)
+  }
 
     return(
         <section id="proj-sec">
@@ -61,10 +67,10 @@ function Project()
                         </p>
                         <div className="proj-btn">
                            {ele.site && <a href={ele.site} target="_blank">
-                            Open Website <FaExternalLinkAlt/></a>}
-                            <a href={ele.gitUrl} target="_blank"><button className="code-btn"><FaCode/> Source Code</button></a>
+                            Open Website <FontAwesomeIcon icon={faArrowUpRightFromSquare}/></a>}
+                            <a href={ele.gitUrl} target="_blank"><button className="code-btn"><FontAwesomeIcon icon={faCode}/> Source Code</button></a>
                             <button className="play-btn" id={ele.vidUrl} 
-                            onClick={(e)=>setVidopen(e.target.id)}>▶︎ Play</button>
+                            onClick={ytOpen}><FontAwesomeIcon icon={faPlay} style={{pointerEvents:"none"}}/> Play</button>
                         </div>
                     </div>
                 </div>)}
@@ -74,7 +80,7 @@ function Project()
            <ReactPlayer controls={true} 
           url={`https://www.youtube.com/watch?v=${vidOpen}`} width="100%" height="100%"/>
         </div>
-        <p className="cross-vid"><FaTimes/></p>
+        <p className="cross-vid"><FontAwesomeIcon icon={faXmark}/></p>
         </div>}
         </section>
     )

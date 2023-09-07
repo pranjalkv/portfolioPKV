@@ -1,5 +1,6 @@
 import "./Contact.css"
-import {FaCheckCircle ,FaRegEnvelope} from "react-icons/fa"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faEnvelope ,faCircleCheck} from '@fortawesome/free-solid-svg-icons'
 import { useState } from "react";
 import {db} from "../../firebase";
 import {collection, addDoc ,serverTimestamp,FieldValue} from "firebase/firestore";
@@ -102,14 +103,14 @@ async function subtoDb(e)
     <p className="err-msg my-2 ms-auto">{onError}</p>
     </div>
     </form>
-        <hr style={{color:"#ffffff"}}/>
+        <hr style={{color:"#475b5a"}}/>
         <div className="mail-me">
               <p className="on-the-line">or you can mail me</p>
-              <p className="my-mail"><FaRegEnvelope/> pranjal0409@gmail.com</p>
+              <p className="my-mail"><FontAwesomeIcon icon={faEnvelope} size="lg"/> pranjal0409@gmail.com</p>
         </div>
             </div>}
                  {onsent && <div className="d-flex justify-content-center flex-column align-items-center err-div">
-            <p><FaCheckCircle/> Your message has been sent successfully ,I will get in touch with you ASAP.</p>
+            <p><FontAwesomeIcon icon={faCircleCheck}/> Your message has been sent successfully ,I will get in touch with you ASAP.</p>
             <p style={{textDecoration:"underline",cursor:"pointer"}}
              onClick={()=>setOnsent(false)}>Go back</p>
             </div>}

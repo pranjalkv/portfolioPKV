@@ -1,5 +1,6 @@
 import "./Navbar.css"
-import {FaBars ,FaTimes} from "react-icons/fa"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faBars,faXmark} from '@fortawesome/free-solid-svg-icons'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { useEffect, useState } from "react";
 function Navbar()
@@ -78,7 +79,7 @@ useEffect(() => {
   
       {openMenu && <ul className="mobileUl" onClick={()=>setOpenmenu(false)}>
         <div className="cross">
-          <FaTimes onClick={()=>setOpenmenu(false)}/>
+          <FontAwesomeIcon icon={faXmark} onClick={()=>setOpenmenu(false)}/>
         </div>
       <li className="activeN">
         <a href="#">Home</a>
@@ -93,8 +94,8 @@ useEffect(() => {
         <a href="#contact-form">Contact</a>
       </li> 
   </ul>}
-    <div className="mobile-menu px-1">
-      <FaBars size="2em" onClick={()=>setOpenmenu(true)}/>
+    <div className="mobile-menu px-1 pt-1">
+      <FontAwesomeIcon icon={faBars} size="xl" onClick={()=>setOpenmenu(true)}/>
     </div>
 </nav>
              </>

@@ -1,5 +1,6 @@
  import "./Front.css"
- import { FaLinkedin ,FaGithub } from "react-icons/fa";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faLinkedin ,faGithub ,faXTwitter} from '@fortawesome/free-brands-svg-icons'
  import { TypeAnimation } from 'react-type-animation';
  import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -8,16 +9,17 @@
   function downResume()
   {
     let alink=document.createElement("a");
-    alink.href="/images/pranjalKumarResume.pdf"
-    alink.download="pranjalKumarResume.pdf"
+    alink.href="/images/pranjalkumarResume12.pdf"
+    alink.download="pranjalkumarResume12.pdf"
     document.body.appendChild(alink);
     alink.click()
     document.body.removeChild(alink);
   }
     return(
     <section id="home">
-        <div className="main-bg"></div>
-    <div className="overlay"></div>
+      <div className="main-bg"></div> 
+    <div className="overlay"></div> 
+
     <div className="intro_front">
         <p className="hello">Hello World!</p>
         <p className="name">I'm Pranjal Kumar</p>
@@ -30,7 +32,7 @@
         ]}
         speed={4}
         repeat={Infinity}
-        style={{ color:"#86c232" }}
+        style={{ color:"#08a7f1" }}
       /></p>
         <div className="text-center">
         <a href="#contact-form"><button className="btn-dow my-2">CONTACT ME</button></a>
@@ -38,13 +40,13 @@
         </div>
         <div className="socials">
           <a href="https://www.linkedin.com/in/pranjalkv"  target="_blank">
-                <FaLinkedin className="anchor-front"/>
+                <FontAwesomeIcon icon={faLinkedin} className="anchor-front"/>
           </a>
           <a href="https://twitter.com/kvpranjal" target="_blank">
-              <img className="twi-width anchor-front" src="/images/twet.png" alt="" />
+              <FontAwesomeIcon icon={faXTwitter} className="anchor-front"/>
           </a>
           <a href="https://github.com/pranjalkv" target="_blank">
-              <FaGithub className="anchor-front"/>
+              <FontAwesomeIcon icon={faGithub} className="anchor-front"/>
           </a>
         </div>
     </div>

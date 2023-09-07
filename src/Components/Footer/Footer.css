@@ -1,8 +1,8 @@
 #footer
 {
-    background-color: var(--darkestblue);
+    background-color: var(--footer);
     font-size: 100%;
-        padding: 2% 1% 0 1%;
+    padding:10px 1% 1% 1%;
         width: 100%;
 }
 .footers-div
@@ -35,13 +35,14 @@ color: var(--blue);
 {
     text-decoration: none;
 }
-.twi-link
-{
-    width: 30px;
-}
 .f-links
 {
-    font-size: 1.6em;
+    font-size: 1.4em;
+    text-align: center;
+    padding: 0;
+    line-height: 0%;
+    margin-top:  16%;
+    margin-left: 3%;
 }
 .foot-copy 
 {
@@ -55,18 +56,17 @@ list-style-type: none;
 padding: 0;
 display: flex;
 justify-content: center;
-
 }
 .foot-li
 {
-    width: 50px;
-    height: 50px;
+    width: 55px;
+    height: 55px;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 100%;
     border: 2px solid var(--blue);
-    margin:0 10px;
+    margin:10px;
     transform: scale(1);
     transition: transform 0.4s ease-in-out;
 }
@@ -86,10 +86,6 @@ justify-content: center;
     {
         font-size: 85%;
     }
-        .twi-link
-{
-    width: 27px;
-}
 .foot-li
 {
     width: 45px;
@@ -118,10 +114,6 @@ justify-content: center;
         width: 100%;
         margin-bottom: 0.5em;
     }
-    .twi-link
-{
-    width: 24px;
-}
 .foot-li
 {
     width: 40px;

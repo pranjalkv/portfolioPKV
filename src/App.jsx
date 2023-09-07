@@ -7,6 +7,7 @@ import {Routes ,Route} from 'react-router-dom';
 import Footer from "./Components/Footer/Footer"
 import Certify from './Components/Certify/Certify'
 import Contact from './Components/Contact/Contact'
+import Replies from './Components/Replies/Replies'
 
 function App() {
 
@@ -23,6 +24,7 @@ function App() {
      <Footer></Footer>
       </>}></Route>
       <Route path='/certification' element={<Certify/>}></Route>
+      <Route path='/replies' element={<Replies/>}></Route>
      </Routes>
     </>
   )

@@ -43,18 +43,20 @@ font-size: 100%;
     
     /* display: grid;
     grid-template-columns: repeat(5,50px); */
-    margin: 0 auto;
+    margin: 4% auto;
     justify-content: center;
     padding-bottom: 50px;
-    width: 100%;
+    width: 50%;
     display: flex;
     flex-wrap: wrap;
     position: relative;
 }
 .line
 {
-    margin: 0 auto;
     width: 70%;
+    background-color: var(--whit);
+    position: absolute;
+    top:-33px
 }
 .img-div
 {
@@ -82,28 +84,43 @@ font-size: 100%;
 }
 .logo-img
 {
-     width: 30px;
-    height: 30px;
+     width: 36px;
+    height: 36px;
     border-radius: 10px;
     object-fit: contain;
+    animation-name: bounce;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
 }
-.edu-skill
+@keyframes bounce {
+
+    0% {transform: translateY(0);}
+    50% {transform: translateY(4px);}
+    100% {transform: translateY(0);}
+}
+ .edu-skill
 {
     position: absolute;
     top: -30px;
     background-color: var(--darkestblue);
     padding:0 2%;
     color: var(--blue);
-}
+} 
 .photo-msg
 {
     font-weight: 600;
     color: var(--blue);
+
 }
 .your-intro
 {
     width: calc(100% - 400px);
      max-width: 870px;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
 }
 .your-intro>h1
 {
@@ -147,14 +164,23 @@ font-size: 100%;
     margin-bottom: 3%;
     object-fit: unset;
 }
+.all-img
+{
+    width: 70%;
+}
 }
 @media (max-width:768px)
 {
 .your-img
 {
     width: 30vw;
-    height: 41vw;
+    height: 30vw;
+    border-radius: 100%;
     margin-bottom: 3%;
-    object-fit: unset;
+    object-fit: cover;
+}
+.all-img
+{
+    width: 90%;
 }
 }

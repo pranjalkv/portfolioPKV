@@ -119,15 +119,15 @@
 {
     .port-navbar
     {
-        font-size: 88%;
+        font-size: 70%;
     }
     .mobile-menu
     {
         display: block;
-    }
-    .mobile-menu>p
-    {
-        font-size: 1.3em;
+        position: absolute;
+        top: 15%;
+        right: 10px;
+        font-size: 1.7em;
     }
     .move-port
     {

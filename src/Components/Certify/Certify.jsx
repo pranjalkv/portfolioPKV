@@ -1,5 +1,5 @@
 import "./Certify.css";
-import { FaArrowLeft } from "react-icons/fa";
+
 import { useEffect } from "react";
 import {useNavigate} from "react-router-dom";
 
@@ -15,7 +15,7 @@ function Certify()
         <>
         <section id="certify">
             <div className="head-home">
-                <button onClick={()=>useNavi("/")}><FaArrowLeft/> Home</button>
+                <button onClick={()=>useNavi("/")}> Home</button>
                 <p>Certifications</p>
             </div>
             <div className="certify-grid">

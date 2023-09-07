@@ -1,6 +1,9 @@
 import "./Footer.css"
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { FaLinkedin ,FaGithub ,FaInstagram ,FaRegCopyright} from "react-icons/fa";
+// import { FaLinkedin ,FaGithub ,FaInstagram ,FaRegCopyright} from "react-icons/fa";
+// import {FaTwitter} from "react-icons/fa6";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faLinkedin ,faGithub ,faXTwitter,faInstagram} from '@fortawesome/free-brands-svg-icons'
 import { useNavigate } from "react-router-dom";
 
 function Footer()
@@ -21,7 +24,7 @@ function Footer()
         target="_blank"
         role="button"
       >
-        <FaLinkedin className="f-links"/>
+        <FontAwesomeIcon icon={faLinkedin} className="f-links"/>
       </a></li>
 
       <li className="foot-li"><a
@@ -30,7 +33,7 @@ function Footer()
         target="_blank"
         role="button"
       >
-        <img className="twi-link" src="/images/twet.png" alt="" />
+        <FontAwesomeIcon icon={faXTwitter} className="f-links"/>
       </a></li>
 
       <li className="foot-li"><a
@@ -39,7 +42,7 @@ function Footer()
         target="_blank"
         role="button"
       >
-        <FaGithub className="f-links"/>
+        <FontAwesomeIcon icon={faGithub} className="f-links"/>
       </a></li>
 
       <li className="foot-li"><a
@@ -48,7 +51,7 @@ function Footer()
         href="https://www.instagram.com/pranjalkv"
         role="button"
       >
-        <FaInstagram className="f-links"/>
+        <FontAwesomeIcon icon={faInstagram} className="f-links"/>
       </a></li>
 
     </ul>
@@ -57,7 +60,7 @@ function Footer()
    </div>
     </div>
       <div className="foot-copy text-center">
-      <p><FaRegCopyright/> Copyright 2023 pranjalkv.com .All Rights Reserved.</p>
+      <p>Copyright 2023 pranjalkv.com .All Rights Reserved.</p>
     </div>
    
 </footer>

@@ -1,6 +1,6 @@
 .main-bg
 {
-    background-image: url("/images/avs.jpg");
+    background-image: url("/images/dh4.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -15,7 +15,7 @@
 .overlay
 {
     background-color: var(--darkestblue);
-    opacity: 0.85;
+    opacity: 0.25;
     width: 100%;
     height: 100vh;
     position: absolute;
@@ -46,10 +46,7 @@
     font-family: 'Poppins', sans-serif;
     letter-spacing: 2px;
 }
-.twi-width
-{
-  width: 40px;
-}
+
 .socials
 {
   margin-top: 1%;
@@ -90,7 +87,7 @@ background-color: transparent;
 }
   .btn-dow:hover {
   background-color: var(--blue);
-  color: #3f3d3d;
+  color: var(--darkestblue);
 }
   }
 @media (min-width:3000px)
@@ -103,10 +100,7 @@ background-color: transparent;
   {
     font-size: 24px;
   }
-  .twi-width
-{
-  width: 70px;
-}
+
 .socials a
 {
   font-size: 70px
@@ -128,16 +122,13 @@ background-color: transparent;
 {
  .intro_front
   {
-    font-size: 50%;
+    font-size: 1.8vw;
   }
    .btn-dow
   {
     font-size: 12px;
   }
-  .twi-width
-{
-  width: 30px;
-}
+
 .socials a
 {
   font-size: 30px
@@ -147,18 +138,15 @@ background-color: transparent;
 {
  .intro_front
   {
-    font-size: 30%;
+    font-size: 1.8vw;
   }
    .btn-dow
   {
     font-size: 10px;
   }
-  .twi-width
-{
-  width: 20px;
-}
+
 .socials a
 {
-  font-size: 20px
+  font-size: 30px
 }
 }
