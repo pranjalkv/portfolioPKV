@@ -28,6 +28,16 @@ const logos=[
         imagesrc:"/images/sym5.png",
         logo:"Redux"
     },
+    {
+        id:51,
+        imagesrc:"/images/sym11.png",
+        logo:"Next.js"
+    },
+    {
+        id:52,
+        imagesrc:"/images/sym12.png",
+        logo:"Typescript"
+    },
        {
         id:6,
         imagesrc:"/images/sym6.png",

@@ -17,10 +17,10 @@ const topProj=[
         slogan:"Recommends movies according to your mood",
         desc:"A movie app where you can know latest movie/shows ,search any movie and best thing about this app is it recommends movie according to your mood (sad ,happy ,tired) .Data used from TMDB Api using Axios to fetch api data .Here you can search any movie/shows around the world and play its trailer from youtube made available using react player",
         urlPic:"/images/pr3.jpg",
-        gitUrl:"https://github.com/pranjalkv/Tractv_movie_app",
+        gitUrl:"https://github.com/pranjalkv/next_Tractv.git",
         vidUrl:"eDTLtfthZew",
         site:"https://tractv.pranjalkv.com",
-        techs:["React","TMDB-Api","React-Player"]
+        techs:["Next.js","React","TMDB-Api","React-Player"]
     },
           {
         id:"3",
